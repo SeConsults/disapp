@@ -1,6 +1,6 @@
+class StocksController < ApplicationController
 
- class StocksController < ApplicationController
- def search
+def search
 
 if params[:stock]
 
@@ -11,7 +11,7 @@ if params[:stock]
 end
 
 if @stock
-
+#render json: @stock
 render partial: 'lookup'
 
 else
@@ -23,6 +23,5 @@ end
 end
 
 end
-   
-
+ 
 
